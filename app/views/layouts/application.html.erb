@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SeasTheDay2</title>
+    <title>White Label</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,16 +13,27 @@
   </head>
 
   <body>
+    <% if ["public","devise"].include?(controller.controller_name) %>
     <header>
       <%= render "layouts/nav/public" %>
+      <%= yield %>
     </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% else %>
+      <%= render "layouts/nav/dashboard" %>
     
+      <div class="container-fluid">
+        <div class="row">
+          <%= render "layouts/nav/sidebar" %>
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <%= yield %>
+          </main>
+        </div>
+      </div>
+    <% end %>
     
-    <%= yield %>
 
-    <%= render "layouts/footer" %>
+    <%# <%= render "layouts/footer" %> %>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
