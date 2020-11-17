@@ -20,6 +20,7 @@
         <td><%= property.price %></td>
         <td><%= property.rooms %></td>
         <td><%= property.bathrooms %></td>
+        <%= image_tag property.picture if property.picture.attached? %>
         <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
         <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,7 +28,6 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Property', new_property_path, class: "btn btn-secondary" %>
