@@ -4,7 +4,4 @@ class DashboardController < ApplicationController
 
   def properties
   end
-
-  def reports
-  end
 end
