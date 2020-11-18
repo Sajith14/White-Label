@@ -3,12 +3,41 @@
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <div class="jumbotron" id="bottom">
     <div class="container">
       <h1 class="display-3">Getting Hitched</h1>
       <p>Marriage is the bond between a person who never remembers anniversaries and another who never forgets them</p>
     </div>
   </div>
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag "mansion-3.jpg", class: "d-block w-100" %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "mansion-2.jpeg", class: "d-block w-100" %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "mansion-1.jpeg", class: "d-block w-100" %>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><br>
 
   <div class="container">
     <!-- Example row of columns -->
