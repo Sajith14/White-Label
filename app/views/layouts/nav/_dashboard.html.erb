@@ -1,5 +1,6 @@
-<nav class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">White Label</a>
+<nav class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow-none">
+  <h3 id="label"class="navbar-brand" style="margin-left: 1em;" href="#">White Label</h3>
+  <%= image_tag "wedding-couple.png", style:"margin-left: -58em;", class: "navbar-brand" %>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
       <%= link_to "Log out", destroy_account_session_path, method: :delete, class: "nav-link" %>
