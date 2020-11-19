@@ -14,11 +14,27 @@
  *= require_self
  */
 
- #label {
+ /* #label {
     background-color: #007bff;
 
-  }
+  } */
 
   #bottom {
     margin-bottom: 0;
+    padding-bottom: 20px;
+    background-color: white;
   }
+
+  .carousel-inner{
+    height: 550px;
+  }
+
+  .navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    margin-top: 10px;
+  }
+
+
+.display-3 {
+  font-family: 'Amatic SC', cursive;
+}
