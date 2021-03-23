@@ -1,24 +1,16 @@
-# README
+# Live Screenshots
 
-This README would normally document whatever steps are necessary to get the application up and running.
+![image](1.png)
+![image](2.png)
+![image](3.png)
+![image](4.png)
+![image](5.png)
+![image](6.png)
+<br>
 
-Things you may want to cover:
+# Wireframe Screenhots
 
-Ruby version
-
-System dependencies
-
-Configuration
-
-Database creation
-
-Database initialization
-
-How to run the test suite
-
-Services (job queues, cache servers, search engines, etc.)
-
-Deployment instructions
-
-...
-
+![image](7.png)
+![image](8.png)
+![image](9.png)
+![image](10.png)
